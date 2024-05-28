@@ -1,4 +1,4 @@
 node_modules/
-migrations/
-models/
+migrations1/
+models1/
 src/config/config.json
