@@ -1,0 +1,4 @@
+node_modules/
+migrations/
+models/
+src/config/config.json
