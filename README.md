@@ -1,8 +1,6 @@
-# Book Service Microservice for online book store
+# Microservice for online book store to handle BookService
 
 ## Table of Contents
-
----
 
 - Introduction
 - Features
@@ -17,34 +15,26 @@
 
 ## Introduction
 
----
-
 The Book Service is a Node.js microservice responsible for managing book-related operations such as adding, updating, viewing, and deleting books. This service is part of a larger microservice-based architecture for an online bookstore.
 
 ## Features
-
----
 
 Create, read, update, and delete (CRUD) books.
 Search for books by title, author, or category.
 Supports pagination for large lists of books.
 RESTful API design for seamless integration with other services.
 
-Requirements
-Node.js (v18.x or higher)
-NPM (v9.x or higher)
-MYSQL
-Redis (optional, for caching)
-And Install all the requriments from package.json
+## Requirements
+
+- Node.js (v18.x or higher)
+- NPM (v9.x or higher)
+- MYSQL (Latest)
+- Redis (optional, for caching)
+- And Install all the requriments from package.json
 
 ## Installation
 
----
-
 Clone the repository:
-
-bash
-Copy code
 
 ```
 git clone https://github.com/kalyanKumarPokkula/online-book-store-backend.git
@@ -54,15 +44,11 @@ cd Bookservice
 
 ### Install dependencies:
 
----
-
 ```
 npm install
 ```
 
 ## Set up environment variables:
-
----
 
 Create a .env file in the root directory of the project and add the necessary environment variables. Here’s an example:
 
