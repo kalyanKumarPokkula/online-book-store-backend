@@ -1,6 +1,6 @@
 const { Author } = require("../models/index");
 const { Book } = require("../models/index");
-
+// const Sequelize = require("sequelize");
 const { Op } = require("sequelize");
 
 class BookRepository {
@@ -41,6 +41,24 @@ class BookRepository {
           model: Author,
         },
       });
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  async search(q) {
+    try {
+      const books = await Book.findAll({
+        where: {
+          title: {
+            [Op.like]: `%${q}%`,
+          },
+        },
+        include: {
+          model: Author,
+        },
+      });
+      return books;
     } catch (error) {
       console.log(error);
     }
